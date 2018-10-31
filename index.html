@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DAILY REVIEW</title>
+    
+    <!--boxslider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider(); 
+        });
+    </script>
+    
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    
+    <!--헤더-->
+    <header>
+        <div id="logo">
+            <a href="index.html">DAILY<br>REVIEW</a><br>
+        </div>
+
+        <!--상단메뉴-->
+        <nav id="menu">
+            <div id="menu-a" class="menu">
+            <i class="fas fa-bars" id="menu-icon"></i>
+                <div class="submenu">
+                    <div class="menu1">
+                        <a href="detail.html">도서</a><br>
+                         <a href="detail.html">-베스트 셀러</a><br>
+                         <a href="detail.html">-신작</a><br>
+                         <a href="detail.html">-소설</a><br>
+                         <a href="detail.html">-시/에세이</a><br>
+                         <a href="detail.html">-인문</a><br>
+                         <a href="detail.html">-경제/경영</a><br>
+                         <a href="detail.html">-참고서</a><br>
+                         <a href="detail.html">-기술/공학</a><br>
+                    </div>
+                    <div class="menu2">
+                        친구<br>
+                         -친구 추천 책<br>
+                         -친구 리뷰<br>
+                    </div>
+                    <div class="menu3">
+                        게시판<br>
+                         -공지사항<br>
+                         -북스토리<br>
+                    </div>
+                    <div class="menu4">
+                        <a href="login.html">로그인</a> <br>
+                        <a href="#">마이페이지</a> <br>
+                    </div>
+                </div>  
+            </div>
+            <div id="search-a">
+                <input type="search" id="search" placeholder="책 제목, 저자 검색"/>
+                <button id="search_btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="mymenu">
+                <a href="index.html">홈</a> 
+                <a href="login.html">로그인</a> 
+                <a href="#">마이페이지</a> 
+            </div>
+        </nav>
+    </header>
+    
+   <!--메인 컨텐츠-->
+    <section>
+        <br><br><br>
+        <div class="slider">
+            <div><img src="imgs/main1.PNG" alt="[메인] 출퇴근 지하철에서 읽기 좋은 책"/></div>
+            <div><img src="imgs/main2.PNG" alt="[메인] 가을 마음이 따뜻해지는 책"/></div>
+        </div> 
+        <h3>오늘의 책</h3><br>
+        <div class="tabs">
+            <input id="all" type="radio" name="tab_item" checked />
+            <label class="tab_item" for="all">반려견</label>
+                
+            <input id="programming" type="radio" name="tab_item" />
+            <label class="tab_item" for="programming">연애</label>
+                
+            <input id="design" type="radio" name="tab_item" />
+            <label class="tab_item" for="design">요리</label>
+                
+            <input id="a" type="radio" name="tab_item" />
+            <label class="tab_item" for="a">인문</label>
+                
+            <div class="tab_content" id="all_content">
+                <div class="book1">
+                    <img src="imgs/tab1_1.jpg" alt="카밍 시그널-투리드 루가스"/><br>
+                    <a><h4>카밍 시그널</h4><br>
+                    투리드 루가스</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab1_2.jpg" alt="강아지 집사 업무일지-오윤도"/><br>
+                    <a><h4>강아지 집사 업무일지</h4><br>
+                    오윤도</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab1_3.jpg" alt="동고동락-이웅종"/><br>
+                    <a><h4>동고동락</h4><br>
+                    이웅종</a>
+                </div>
+            </div>
+            <div class="tab_content" id="programming_content">
+                   <div class="book1">
+                    <img src="imgs/tab2_1.jpg" alt="을의 연애-을냥이"/><br>
+                    <a><h4>을의 연애</h4><br>
+                    을냥이</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab2_2.jpg" alt="서른의 연애-좋은비"/><br>
+                    <a><h4>서른의 연애</h4><br>
+                    좋은비</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab2_3.jpg" alt="너니까 좋아 너라서 좋아-신소현,조중우"/><br>
+                    <a><h4>너니까 좋아 너라서 좋아</h4><br>
+                    신소현,조중우</a>
+                </div>
+            </div>
+            <div class="tab_content" id="design_content">
+                    <div class="book1">
+                    <img src="imgs/tab3_1.jpg" alt="퇴근 후 후다닥 집밥 한 끼-램블부부"/><br>
+                    <a><h4>퇴근 후 후다닥 집밥 한 끼</h4><br>
+                    램블부부</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab3_2.jpg" alt="겨울딸기의 리얼 집밥"/><br>
+                    <a><h4>겨울딸기의 리얼 집밥</h4><br>
+                    강지현</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab3_3.jpg" alt="백종원이 추천하는 집밥 메뉴-백종원"/><br>
+                    <a><h4>백종원이 추천하는 집밥 메뉴</h4><br>
+                    백종원</a>
+                </div>
+            </div>
+            <div class="tab_content" id="a_content">
+                    <div class="book1">
+                    <img src="imgs/tab4_1.jpg" alt="무뚝뚝해도 괜찮습니다-이케다 준"/><br>
+                    <a><h4>무뚝뚝해도 괜찮습니다</h4><br>
+                    이케다 준</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab4_2.jpg" alt="헤어짐을 수업하다-쑨중싱"/><br>
+                    <a><h4>헤어짐을 수업하다</h4><br>
+                    쑨중싱</a>
+                </div>
+                <div class="book1">
+                    <img src="imgs/tab4_3.jpg" alt="혼자가 편한 당신에게-이오이 도시노리"/><br>
+                    <a><h4>혼자가 편한 당신에게</h4><br>
+                    이와이 도시노리</a>
+                </div>
+            </div>
+        </div>
+        <div id="board">
+            <div id="bookstory">
+                <h3>북스토리</h3> <a href="#" style="float: right; margin-right: 10%;">더보기></a><br>
+                <ul>
+                    <li>공감의 심리학 작가를 만나다</li>
+                    <li>임수연 시인에게 시란</li>
+                    <li>강형욱 훈련사 책 내다</li>
+                </ul>
+            </div>
+            <div id="notice">
+                <h3>공지사항</h3> <a href="#" style="float: right; margin-right: 10%;">더보기></a><br>
+                <ul>
+                    <li>[안내] 10월의 리뷰어 당첨자 발표</li>
+                    <li>[공지] 전산 시스템 점검 안내</li>
+                    <li>[공지] 개인정보취급방침 변경 안내</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+  
+    <!--푸터-->
+    <footer>
+        <div id="footer_a">
+           <br>고객문의: 1234 - 0000 평일 9시~18시(토요일,일요일,공휴일 휴무)<br><br>
+            
+            <div id="footer_box">
+                <div id="footer1">
+                    <br>DAILY REVIEW<br><br>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <div id="footer2">
+                    <ul>
+                        <li>회사명 : 데일리리뷰</li>
+                        <li>대표이사 : 임수연</li>
+                        <li>E-mail : kkjjgf@naver.com</li>
+                        <li><address>주소 : 서울시 구로구 경인로 445</address></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

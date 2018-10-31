@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DAILY REVIEW</title>
+    
+    <!--boxslider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider(); 
+        });
+    </script>
+    
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    
+    <!--헤더-->
+    <header>
+        <div id="logo">
+            <a href="index.html">DAILY<br>REVIEW</a><br>
+        </div>
+
+        <!--상단메뉴-->
+        <nav id="menu">
+            <div id="menu-a" class="menu">
+            <i class="fas fa-bars" id="menu-icon"></i>
+                <div class="submenu">
+                    <div class="menu1">
+                        <a href="detail.html">도서</a><br>
+                         <a href="detail.html">-베스트 셀러</a><br>
+                         <a href="detail.html">-신작</a><br>
+                         <a href="detail.html">-소설</a><br>
+                         <a href="detail.html">-시/에세이</a><br>
+                         <a href="detail.html">-인문</a><br>
+                         <a href="detail.html">-경제/경영</a><br>
+                         <a href="detail.html">-참고서</a><br>
+                         <a href="detail.html">-기술/공학</a><br>
+                    </div>
+                    <div class="menu2">
+                        친구<br>
+                         -친구 추천 책<br>
+                         -친구 리뷰<br>
+                    </div>
+                    <div class="menu3">
+                        게시판<br>
+                         -공지사항<br>
+                         -북스토리<br>
+                    </div>
+                    <div class="menu4">
+                        <a href="login.html">로그인</a> <br>
+                        <a href="#">마이페이지</a> <br>
+                    </div>
+                </div>  
+            </div>
+            <div id="search-a">
+                <input type="search" id="search" placeholder="책 제목, 저자 검색"/>
+                <button id="search_btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="mymenu">
+                <a href="index.html">홈</a> 
+                <a href="login.html">로그인</a> 
+                <a href="#">마이페이지</a> 
+            </div>
+        </nav>
+    </header>
+ <!--로그인-->
+    <section>
+        <div id="login">
+            <h2>로그인</h2><br>
+            <input type="text" placeholder=" 아이디" /><br>
+            <input type="password" placeholder=" 비밀번호" /><br>
+            <button id="login_btn">로그인</button><br>
+            <button id="idpw_search">아이디/비번 찾기</button>
+            <button id="join">회원가입</button><br>
+        </div>
+    </section>
+  
+    <!--푸터-->
+    <footer>
+        <div id="footer_a">
+           <br>고객문의: 1234 - 0000 평일 9시~18시(토요일,일요일,공휴일 휴무)<br><br>
+            
+            <div id="footer_box">
+                <div id="footer1">
+                    <br>DAILY REVIEW<br><br>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <div id="footer2">
+                    <ul>
+                        <li>회사명 : 데일리리뷰</li>
+                        <li>대표이사 : 임수연</li>
+                        <li>E-mail : kkjjgf@naver.com</li>
+                        <li><address>주소 : 서울시 구로구 경인로 445</address></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
