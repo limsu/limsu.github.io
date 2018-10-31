@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
     <script>
         $(document).ready(function(){
-          $('.slider').bxSlider(); 
+            $('.slider').bxSlider(); 
         });
     </script>
     
@@ -18,6 +17,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
     <!--css-->
     <link rel="stylesheet" href="./css/style.css" />
+    
 </head>
 <body>
     
@@ -26,11 +26,13 @@
         <div id="logo">
             <a href="index.html">DAILY<br>REVIEW</a><br>
         </div>
-
+        
         <!--상단메뉴-->
         <nav id="menu">
             <div id="menu-a" class="menu">
-            <i class="fas fa-bars" id="menu-icon"></i>
+                <!--메뉴 아이콘-->
+                <i class="fas fa-bars" id="menu-icon"></i>
+                <!--숨겨져 있다가 메뉴 아이콘에 마우스 올릴 시 나타나는 메뉴-->
                 <div class="submenu">
                     <div class="menu1">
                         <a href="detail.html">도서</a><br>
@@ -53,16 +55,19 @@
                          -공지사항<br>
                          -북스토리<br>
                     </div>
+                    <!--숨겨져 있다가 모바일 크기에서 나타나는 메뉴-->
                     <div class="menu4">
                         <a href="login.html">로그인</a> <br>
                         <a href="#">마이페이지</a> <br>
                     </div>
                 </div>  
             </div>
+            <!--검색창-->
             <div id="search-a">
                 <input type="search" id="search" placeholder="책 제목, 저자 검색"/>
                 <button id="search_btn"><i class="fas fa-search"></i></button>
             </div>
+            <!--모바일 크기에서는 사라지는 메뉴-->
             <div id="mymenu">
                 <a href="index.html">홈</a> 
                 <a href="login.html">로그인</a> 
@@ -71,28 +76,32 @@
         </nav>
     </header>
     
-   <!--메인 컨텐츠-->
+    <!--메인 컨텐츠-->
     <section>
         <br><br><br>
+        
+        <!--슬라이드 이미지-->
         <div class="slider">
             <div><img src="imgs/main1.PNG" alt="[메인] 출퇴근 지하철에서 읽기 좋은 책"/></div>
             <div><img src="imgs/main2.PNG" alt="[메인] 가을 마음이 따뜻해지는 책"/></div>
         </div> 
+        
+        <!--탭메뉴-->
         <h3>오늘의 책</h3><br>
         <div class="tabs">
-            <input id="all" type="radio" name="tab_item" checked />
-            <label class="tab_item" for="all">반려견</label>
+            <input id="tab1" type="radio" name="tab_item" checked />
+            <label class="tab_item" for="tab1">반려견</label>
                 
-            <input id="programming" type="radio" name="tab_item" />
-            <label class="tab_item" for="programming">연애</label>
+            <input id="tab2" type="radio" name="tab_item" />
+            <label class="tab_item" for="tab2">연애</label>
                 
-            <input id="design" type="radio" name="tab_item" />
-            <label class="tab_item" for="design">요리</label>
+            <input id="tab3" type="radio" name="tab_item" />
+            <label class="tab_item" for="tab3">요리</label>
                 
-            <input id="a" type="radio" name="tab_item" />
-            <label class="tab_item" for="a">인문</label>
+            <input id="tab4" type="radio" name="tab_item" />
+            <label class="tab_item" for="tab4">인문</label>
                 
-            <div class="tab_content" id="all_content">
+            <div class="tab_content" id="tab1_content">
                 <div class="book1">
                     <img src="imgs/tab1_1.jpg" alt="카밍 시그널-투리드 루가스"/><br>
                     <a><h4>카밍 시그널</h4><br>
@@ -109,7 +118,7 @@
                     이웅종</a>
                 </div>
             </div>
-            <div class="tab_content" id="programming_content">
+            <div class="tab_content" id="tab2_content">
                    <div class="book1">
                     <img src="imgs/tab2_1.jpg" alt="을의 연애-을냥이"/><br>
                     <a><h4>을의 연애</h4><br>
@@ -126,7 +135,7 @@
                     신소현,조중우</a>
                 </div>
             </div>
-            <div class="tab_content" id="design_content">
+            <div class="tab_content" id="tab3_content">
                     <div class="book1">
                     <img src="imgs/tab3_1.jpg" alt="퇴근 후 후다닥 집밥 한 끼-램블부부"/><br>
                     <a><h4>퇴근 후 후다닥 집밥 한 끼</h4><br>
@@ -143,7 +152,7 @@
                     백종원</a>
                 </div>
             </div>
-            <div class="tab_content" id="a_content">
+            <div class="tab_content" id="tab4_content">
                     <div class="book1">
                     <img src="imgs/tab4_1.jpg" alt="무뚝뚝해도 괜찮습니다-이케다 준"/><br>
                     <a><h4>무뚝뚝해도 괜찮습니다</h4><br>
@@ -161,6 +170,7 @@
                 </div>
             </div>
         </div>
+        <!--게시-->
         <div id="board">
             <div id="bookstory">
                 <h3>북스토리</h3> <a href="#" style="float: right; margin-right: 10%;">더보기></a><br>
@@ -180,12 +190,11 @@
             </div>
         </div>
     </section>
-  
+    
     <!--푸터-->
     <footer>
         <div id="footer_a">
            <br>고객문의: 1234 - 0000 평일 9시~18시(토요일,일요일,공휴일 휴무)<br><br>
-            
             <div id="footer_box">
                 <div id="footer1">
                     <br>DAILY REVIEW<br><br>

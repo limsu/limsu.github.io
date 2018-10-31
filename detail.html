@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
     <script>
         $(document).ready(function(){
-          $('.slider').bxSlider(); 
+            $('.slider').bxSlider(); 
         });
     </script>
     
@@ -18,6 +17,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
     <!--css-->
     <link rel="stylesheet" href="./css/style.css" />
+    
 </head>
 <body>
     
@@ -30,7 +30,9 @@
         <!--상단메뉴-->
         <nav id="menu">
             <div id="menu-a" class="menu">
-            <i class="fas fa-bars" id="menu-icon"></i>
+                <!--메뉴 아이콘-->
+                <i class="fas fa-bars" id="menu-icon"></i>
+                <!--숨겨져 있다가 메뉴 아이콘에 마우스 올릴 시 나타나는 메뉴-->
                 <div class="submenu">
                     <div class="menu1">
                         <a href="detail.html">도서</a><br>
@@ -53,16 +55,19 @@
                          -공지사항<br>
                          -북스토리<br>
                     </div>
+                    <!--숨겨져 있다가 모바일 크기에서 나타나는 메뉴-->
                     <div class="menu4">
                         <a href="login.html">로그인</a> <br>
                         <a href="#">마이페이지</a> <br>
                     </div>
                 </div>  
             </div>
+            <!--검색창-->
             <div id="search-a">
                 <input type="search" id="search" placeholder="책 제목, 저자 검색"/>
                 <button id="search_btn"><i class="fas fa-search"></i></button>
             </div>
+            <!--모바일 크기에서는 사라지는 메뉴-->
             <div id="mymenu">
                 <a href="index.html">홈</a> 
                 <a href="login.html">로그인</a> 
@@ -70,8 +75,10 @@
             </div>
         </nav>
     </header>
+    
    <!--디테일 페이지-->
     <section>
+        <!--빵부스러기-->
         <div id="breadcrumb">
             <a href="index.html"><i class="fas fa-home"></i></a>
             <i class="fas fa-chevron-right"></i>
@@ -79,6 +86,7 @@
             <i class="fas fa-chevron-right"></i>
             신작 
         </div>
+        <!--정렬 버튼-->
         <div id="sort">
             <button>평점순</button>
             <button>제목순</button>
@@ -86,6 +94,7 @@
         </div>
         <br><br>
         <hr>
+        <!--도서 정보 레이아웃-->
         <div id="book_list">
             <img src="imgs/tab1_1.jpg" class="book_img" alt="카밍 시그널-투리드 루가스"/>
             <div class="book_button">
@@ -162,11 +171,14 @@
                 좋은비 | 책비<br>
                 <i class="fas fa-star"></i> 9.2<br><br>
                 <h4>줄거리</h4><br>
-                나는 왜 사랑하는 사람에게 더욱 잔인했던가. 
-                비단 그때만은 아니었던 것 같다. 어쩌다 여자친구가 약속에 늦을 때면 거의 한 시간 정도는 표정을 굳히고 싸늘하게 대했던 나였다. 나 역시 수많은 실수를 했음에도 불구하고 유독 여자친구에게 더 엄격하고 매서웠다. 친구들에게는 넉넉하고 인심 좋은 내가, 가장 사랑하는 사람에게는 그렇지 못했던 것이다. 
+                <p>
+                    나는 왜 사랑하는 사람에게 더욱 잔인했던가. 
+                    비단 그때만은 아니었던 것 같다. 어쩌다 여자친구가 약속에 늦을 때면 거의 한 시간 정도는 표정을 굳히고 싸늘하게 대했던 나였다. 나 역시 수많은 실수를 했음에도 불구하고 유독 여자친구에게 더 엄격하고 매서웠다. 친구들에게는 넉넉하고 인심 좋은 내가, 가장 사랑하는 사람에게는 그렇지 못했던 것이다. 
+                </p>
             </div>
 
         </div>
+        <!--페이징 버튼-->
         <div id="page">
             <ul>
                 <li><a><i class="fas fa-angle-left"></i></a></li>
@@ -180,11 +192,11 @@
 
         </div>
     </section>
+    
     <!--푸터-->
     <footer>
         <div id="footer_a">
            <br>고객문의: 1234 - 0000 평일 9시~18시(토요일,일요일,공휴일 휴무)<br><br>
-            
             <div id="footer_box">
                 <div id="footer1">
                     <br>DAILY REVIEW<br><br>
